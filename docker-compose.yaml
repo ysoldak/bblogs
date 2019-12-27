@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    environment:
+      PORT: "1234"
+    # volumes:
+    #   - .:/code
+    ports:
+      - "8000:1234"
